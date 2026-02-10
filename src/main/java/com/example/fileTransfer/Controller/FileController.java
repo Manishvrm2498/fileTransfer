@@ -13,7 +13,6 @@ public class FileController {
     public FileController(FileService fileService) {
         this.fileService = fileService;
     }
-
     @GetMapping("/get-path")
     public String getPath() throws IOException {
         return fileService.copyFile();
